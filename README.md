@@ -1,6 +1,6 @@
 # Luna
 
-Luna is a cool content management for Laravel 5.x apps. Out of the box you can manage pages, blocks of contents, different kind of assets, etc.
+Luna is a simple content management for Laravel 5.x apps. Out of the box you can manage pages, blocks of contents, different kind of assets, etc.
 
 ## Features
 
