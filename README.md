@@ -10,8 +10,6 @@ Luna is a simple content management for Laravel 5.x apps. Out of the box you can
 - PHP >= 5.5.9
 - OpenSSL PHP Extension
 - Mbstring PHP Extension
-- Tokenizer PHP Extension
-- Memcached or Redis
 
 ## Install
 
@@ -28,4 +26,4 @@ $ composer require jfreites/luna
 
 ## License
 
-TypiCMS is an open-source software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+Luna is an open-source software licensed under the [MIT license](http://opensource.org/licenses/MIT).
