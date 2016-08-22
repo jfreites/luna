@@ -18,10 +18,7 @@ class Page extends Model
 
     public $timestamps = true;
 
-    protected $fillable = ['template', 'name', 'title', 'slug', 'content', 'extras'];
-
-    // protected $hidden = [];
-    // protected $dates = [];
+    protected $fillable = ['template', 'name', 'title', 'slug', 'body', 'css', 'js', 'meta_title', 'meta_keywords', 'meta_description', 'visible_in_menu'];
 
     /*
     |--------------------------------------------------------------------------

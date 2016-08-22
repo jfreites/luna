@@ -79,6 +79,20 @@ class LunaServiceProvider extends ServiceProvider
                 Route::get('{slug}', 'FrontController@slug')->where('slug', '(.*)');
                 
             });
+
+            // API Routes
+            Route::group(['middleware' => 'api'], function () {
+
+                Route::post('luna/api/forms/{formId}', function($formId) {
+                    // use $formId to know who form we are to processed...
+
+                    if (empty($_POST['email']) || empty($_POST['message'])) {
+                        return back()->with('message', 'Llene todos los campos');
+                    }
+
+                });
+
+            });
         });
     }
 
@@ -92,11 +106,6 @@ class LunaServiceProvider extends ServiceProvider
         $this->app->bind('luna',function($app){
             return new Luna($app);
         });
-
-        // use this if your package has a config file
-        // config([
-        //         'config/luna.php',
-        // ]);
 
         # register its dependencies
         $this->app->register(\Cartalyst\Sentinel\Laravel\SentinelServiceProvider::class);

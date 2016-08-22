@@ -25,6 +25,7 @@ class PageController extends AdminController
         ]);
 
         $request['slug'] = $this->slugifyTitle($request->title);
+        $request['visible_in_menu'] = isset($request->visible_in_menu) ? 1 : 0;
 
         Page::create($request->all());
 
@@ -58,6 +59,7 @@ class PageController extends AdminController
         $page->meta_title = $request->meta_title;
         $page->meta_keywords = $request->meta_keywords;
         $page->meta_description = $request->meta_description;
+        $page->meta_description = isset($request->visible_in_menu) ? 1 : 0;
 
         if (!$page->save()) {
             return back();

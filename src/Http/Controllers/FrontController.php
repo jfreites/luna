@@ -26,19 +26,18 @@ class FrontController extends Controller
             abort('403');
         }
 
-        return $page;
+        $data = $this->prepareContent($page);
 
-        //$data = $this->prepareContent($page);
-
-        //return view(config('luna.templates_folder').'.'.$page->template, $data);
+        return view('templates.page', $data);
     }
 
     private function prepareContent($page)
     {
         return [
             'title' => $page->title,
-            'content' => $page->content,
-            'extras' => json_decode($page->extras, true),
+            'content' => $page->body,
+            'css' => $page->css,
+            'js' => $page->js,
             'menu' => Page::getNoParents()
         ];
     }

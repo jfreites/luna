@@ -18,6 +18,7 @@ class LunaSetupTables extends Migration
             $table->integer('order');
             $table->boolean('private')->default(0);
             $table->boolean('is_home')->default(0);
+            $table->boolean('visible_in_menu')->default(0);
             $table->string('slug')->nullable();
             $table->string('title');
             $table->text('body');
