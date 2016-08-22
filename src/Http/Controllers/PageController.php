@@ -30,7 +30,6 @@ class PageController extends AdminController
         Page::create($request->all());
 
         return redirect('admin/page');
-
     }
 
     public function edit(Page $page)
@@ -94,7 +93,8 @@ class PageController extends AdminController
         return view('luna::admin.pages.order_ajax', compact('pages'));
     }
 
-    private function slugifyTitle($text) {
+    private function slugifyTitle($text)
+    {
 
         // replace non letter or digits by -
         $text = preg_replace('~[^\pL\d]+~u', '-', $text);
