@@ -9,7 +9,6 @@ use Illuminate\Http\Request;
 
 class FileManagerController extends AdminController
 {
-
     public function index()
     {
         $this->data['entries'] = FileEntry::all();

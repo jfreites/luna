@@ -4,7 +4,6 @@ namespace Jfreites\Luna\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-
 class FileEntry extends Model
 {
     /*

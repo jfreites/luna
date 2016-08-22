@@ -58,7 +58,6 @@ class Page extends Model
             if (! $page['parent_id']) {
                 // This page has no parent
                 $result[$page['id']] = $page;
-
             } else {
                 // This is a child page
                 $result[$page['parent_id']]['children'][] = $page;
@@ -77,7 +76,6 @@ class Page extends Model
     {
         if (count($pages)) {
             foreach ($pages as $order => $page) {
-
                 if (isset($page['id']) && !empty($page['id'])) {
                     $data = [
                         'parent_id' => (int) $page['parent_id'],
@@ -98,7 +96,7 @@ class Page extends Model
      * @param null $id
      * @param bool $single
      */
-    public static function getWithParent ($id = NULL, $single = FALSE)
+    public static function getWithParent($id = null, $single = false)
     {
         // List a given parent and his childs, in an associative array
     }

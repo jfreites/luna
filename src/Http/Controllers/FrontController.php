@@ -6,7 +6,6 @@ use Jfreites\Luna\Models\Page;
 
 class FrontController extends Controller
 {
-
     public function slug($slug = null)
     {
         if (!$slug) {
