@@ -84,6 +84,7 @@
         </form>
     </div>
 
+<<<<<<< HEAD
 @endsection
 
 @section('extra-js')
@@ -103,3 +104,6 @@
     </script>
 
 @endsection
+=======
+@endsection()
+>>>>>>> aa15e913b09cd4e9a1d9cec25811e406f426083c

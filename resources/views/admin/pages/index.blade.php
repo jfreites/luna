@@ -107,7 +107,11 @@
         #orderResult p,ol,ul,pre,form {
             margin-top: 0;
             margin-bottom: 1em;
+<<<<<<< HEAD
         }*/
+=======
+        }
+>>>>>>> aa15e913b09cd4e9a1d9cec25811e406f426083c
     </style>
 @endsection
 

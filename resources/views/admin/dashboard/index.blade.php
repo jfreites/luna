@@ -2,8 +2,10 @@
 
 @section('content')
 
-    <h1 class="page-header">Dashboard</h1>
-
-    <p>more info soon...</p>
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Dashboard</h1>
+        </div>
+    </div><!--/.row-->
 
 @endsection()

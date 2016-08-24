@@ -103,6 +103,7 @@ class LunaServiceProvider extends ServiceProvider
         # register its dependencies
         $this->app->register(\Cartalyst\Sentinel\Laravel\SentinelServiceProvider::class);
         $this->app->register(\Jenssegers\Date\DateServiceProvider::class);
+        $this->app->register(\igaster\laravelTheme\themeServiceProvider::class);
 
         # register their aliases
         $loader = \Illuminate\Foundation\AliasLoader::getInstance();
@@ -110,5 +111,6 @@ class LunaServiceProvider extends ServiceProvider
         $loader->alias('Activation', \Cartalyst\Sentinel\Laravel\Facades\Activation::class);
         $loader->alias('Reminder', \Cartalyst\Sentinel\Laravel\Facades\Reminder::class);
         $loader->alias('Sentinel', \Cartalyst\Sentinel\Laravel\Facades\Sentinel::class);
+        $loader->alias('Theme', \igaster\laravelTheme\Facades\Theme::class);
     }
 }

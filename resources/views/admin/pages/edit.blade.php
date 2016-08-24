@@ -2,7 +2,11 @@
 
 @section('content')
 
+<<<<<<< HEAD
     <h2 class="sub-header">Editar: {{ $page->title }}</h2>
+=======
+    <h2 class="sub-header">Crear una nueva página</h2>
+>>>>>>> aa15e913b09cd4e9a1d9cec25811e406f426083c
 
     <div class="container-fluid">
         <form action="{{ url('admin/page/'.$page->id) }}" method="post">
@@ -85,11 +89,16 @@
         <hr>
         <form action="{{ url('admin/page/'.$page->id) }}" method="post">
             {{ csrf_field() }}
+<<<<<<< HEAD
+=======
+            <!--<input type="hidden" name="_method" value="DELETE">-->
+>>>>>>> aa15e913b09cd4e9a1d9cec25811e406f426083c
             {{ method_field('DELETE') }}
             <input type="submit" class="btn btn-xs btn-danger" value="Eliminar Página">
         </form>
     </div>
 
+<<<<<<< HEAD
 @endsection
 
 @section('extra-js')
@@ -121,3 +130,6 @@
     </script>
 
 @endsection
+=======
+@endsection()
+>>>>>>> aa15e913b09cd4e9a1d9cec25811e406f426083c

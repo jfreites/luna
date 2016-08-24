@@ -14,11 +14,26 @@ function get_ol ($array, $child = FALSE)
             //$str .= '<div class="menuDiv"><span class="glyphicon glyphicon-edit editItem" data-id="'.$item['id'].'"></span><p>' . $item['title'] .'</p></div>';
 
             $str .= '<div class="menuDiv">
+<<<<<<< HEAD
 			            <span>
 			                <span data-id="'.$item['id'].'" class="itemTitle">'.$item['title'].'</span>
 			                <span title="Click to edit item." data-id="'.$item['id'].'" class="editItem ui-icon ui-icon-pencil"></span>
 			            </span>
 		            </div>';
+=======
+			   <span>
+			   <span data-id="2" class="itemTitle">'.$item['title'].'</span>
+			   <span title="Click to edit item." data-id="'.$item['id'].'" class="editItem ui-icon ui-icon-pencil">
+			   <span></span>
+			   </span>
+			   </span>
+			   <div id="menuEdit_'.$item['id'].'" class="menuEdit hidden">
+				   <p>
+					   Content or form, or nothing here. Whatever you want.
+				   </p>
+			   </div>
+		   </div>';
+>>>>>>> aa15e913b09cd4e9a1d9cec25811e406f426083c
 
             // Do we have any children?
             if (isset($item['children']) && count($item['children'])) {
@@ -49,7 +64,11 @@ function get_ol ($array, $child = FALSE)
             tolerance: 'pointer',
             maxLevels: 3,
             isTree: true,
+<<<<<<< HEAD
             change: function() {
+=======
+            change: function(){
+>>>>>>> aa15e913b09cd4e9a1d9cec25811e406f426083c
                 console.log('Relocated item');
             }
         });
