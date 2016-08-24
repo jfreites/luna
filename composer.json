@@ -14,7 +14,7 @@
         "illuminate/support": "5.1.*|5.2.*",
         "jenssegers/date": "^3.2",
         "cartalyst/sentinel": "2.0.*",
-        "igaster/laravel-theme": "dev-master"
+        "igaster/laravel-theme": "^1.1"
     },
     "require-dev": {
         "phpunit/phpunit" : "~4.0||~5.0"
