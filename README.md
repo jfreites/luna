@@ -1,5 +1,7 @@
 # Luna
 
+[![StyleCI](https://styleci.io/repos/66278431/shield)](https://styleci.io/repos/66278431)
+
 Luna is a simple content management for Laravel 5.x apps. Out of the box you can manage pages, blocks of contents, different kind of assets, etc.
 
 ## Features
